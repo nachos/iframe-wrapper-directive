@@ -1,0 +1,30 @@
+{
+  "name": "iframe-wrapper-directive",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nachos/iframe-wrapper-directive",
+  "authors": [
+    "Nachos team"
+  ],
+  "description": "iframe wrapper directive that support context injection",
+  "main": "src\\iframeWrapper.directive.js",
+  "keywords": [
+    "iframe",
+    "wrapper",
+    "nachos",
+    "directive",
+    "inject"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "angular": ">=1.2",
+    "ng-lodash": "~0.2.3"
+  }
+}
