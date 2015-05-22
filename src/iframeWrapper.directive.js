@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('iframeWrapper', ['ngLodash'])
-  .directive('iframeWrapper', function(lodash) {
+  .directive('iframeWrapper', function(lodash, $compile) {
     return {
       restrict: 'E',
       replace: true,
@@ -12,8 +12,7 @@ angular.module('iframeWrapper', ['ngLodash'])
       template:'<iframe seamless nwdisable nwfaketop></iframe>',
       link: function(scope, ele, attr, ctrl) {
         ele.attr('src', scope.src);
-        var content = ele[0].contentWindow;
-        content = lodash.assign(content, scope.content);
+        ele[0].contentWindow = lodash.assign(ele[0].contentWindow, scope.content);
       }
     };
   });
