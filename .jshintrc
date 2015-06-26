@@ -1,0 +1,14 @@
+{
+  "eqeqeq": true,
+  "freeze": true,
+  "futurehostile": true,
+  "noarg": true,
+  "nonbsp": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "angular": false
+  },
+  "node": true,
+  "globalstrict": true
+}

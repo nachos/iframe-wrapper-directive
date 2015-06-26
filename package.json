@@ -1,0 +1,35 @@
+{
+  "name": "iframe-wrapper-directive",
+  "version": "0.0.0",
+  "description": "iframe wrapper",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-bump": "^0.3.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "jshint-stylish": "^2.0.1",
+    "lazypipe": "^0.2.4",
+    "run-sequence": "^1.1.1"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nachos/iframe-wrapper-directive"
+  },
+  "keywords": [
+    "iframe",
+    "wrapper",
+    "angular",
+    "directive"
+  ],
+  "author": "Nachos team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nachos/iframe-wrapper-directive/issues"
+  },
+  "homepage": "https://github.com/nachos/iframe-wrapper-directive"
+}
