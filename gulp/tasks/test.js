@@ -1,24 +1,13 @@
 'use strict';
 
-// TODO: Rewrite
-
-var mocha = require('gulp-mocha');
-var istanbul = require('gulp-istanbul');
-var config = require('../config');
+var Server = require('karma').Server;
+var path = require('path');
 
 module.exports = function (gulp) {
-  gulp.task('test', ['lint'], function (cb) {
-    gulp.src(config.paths.src)
-      .pipe(istanbul({
-        includeUntested: true
-      }))
-      .pipe(istanbul.hookRequire())
-      .on('finish', function () {
-        gulp.src(config.paths.test)
-          .pipe(mocha({reporter: 'spec'}))
-          .pipe(istanbul.writeReports())
-          .pipe(istanbul.enforceThresholds({thresholds: {global: 100}}))
-          .on('end', cb);
-      });
+  gulp.task('test', ['wiredep:karma', 'lint'], function () {
+    new Server({
+      configFile: path.resolve('karma.conf.js'),
+      singleRun: true
+    }).start();
   });
 };

@@ -9,5 +9,10 @@
   "node": true,
   "globalstrict": true,
   "expr": true,
-  "mocha": true
+  "mocha": true,
+  "globals": {
+    "expect": false,
+    "inject": false,
+    "angular": false
+  }
 }
