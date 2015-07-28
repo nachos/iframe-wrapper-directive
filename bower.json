@@ -23,7 +23,6 @@
     "coverage",
     "gulp"
   ],
-  "private": true,
   "dependencies": {
     "angular": ">=1.2",
     "ng-lodash": "~0.2.3"
