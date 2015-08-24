@@ -9,7 +9,7 @@ angular.module('iframeWrapper', ['ngLodash'])
         src: '=',
         content: '='
       },
-      template: '<iframe seamless nwdisable nwfaketop></iframe>',
+      template: '<iframe seamless></iframe>',
       link: function (scope, ele) {
         ele.attr('src', scope.src);
         lodash.assign(ele[0].contentWindow, scope.content);
